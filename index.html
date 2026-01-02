@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Top Grades Tutoring</title>
+  <meta name="description" content="Top Grades Tutoring — Math, English, French. First lesson is free." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="container header">
+    <div class="brand">
+      <div class="mark">TG</div>
+      <div>
+        <h1>Top Grades Tutoring</h1>
+        <p class="tagline">Math • English • French</p>
+      </div>
+    </div>
+
+    <div class="promo">
+      <span class="pill">✅ First lesson is free</span>
+    </div>
+  </header>
+
+  <main class="container grid">
+    <!-- Left: Simple info -->
+    <section class="card">
+      <h2>Get better grades with a simple plan.</h2>
+      <p>
+        Personalized tutoring focused on understanding, confidence, and consistent improvement.
+        Send a request below and we’ll reply to schedule your <strong>free first lesson</strong>.
+      </p>
+
+      <div class="details">
+        <h3>Contact</h3>
+        <p><strong>Your Name:</strong> <span class="muted">[Put your name here]</span></p>
+        <p><strong>Phone:</strong> <span class="muted">[Put your phone here]</span></p>
+        <p><strong>Email:</strong> <span class="muted">[Put your email here]</span></p>
+        <p><strong>Subjects:</strong> Math, English, French</p>
+      </div>
+    </section>
+
+    <!-- Right: Form -->
+    <section class="card">
+      <h2>Request tutoring</h2>
+      <p class="muted">Fill this out and it will be sent to your email.</p>
+
+      <!-- IMPORTANT:
+        1) Create a Formspree form and replace the action URL below.
+        2) Example: action="https://formspree.io/f/abcdwxyz"
+      -->
+      <form
+        class="form"
+        action="https://formspree.io/f/xlgdnglr"
+        method="POST"
+      >
+        <!-- Visitor info -->
+        <div class="row">
+          <div>
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Smith" required />
+          </div>
+
+          <div>
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" required />
+          </div>
+        </div>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label for="subjects">Subjects needed</label>
+        <select id="subjects" name="subjects" required>
+          <option value="" disabled selected>Select a subject</option>
+          <option>Math</option>
+          <option>English</option>
+          <option>French</option>
+          <option>Math + English</option>
+          <option>Math + French</option>
+          <option>English + French</option>
+          <option>Other (describe below)</option>
+        </select>
+
+        <label for="message">Inquiry / request</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="Tell us the grade level, topic, goals, and your availability."
+          required
+        ></textarea>
+
+        <!-- Optional: Email subject line -->
+        <input type="hidden" name="_subject" value="New Tutoring Request — Top Grades Tutoring" />
+
+        <button type="submit">Submit request</button>
+
+        <p class="fineprint">
+          By submitting, you agree we can contact you about tutoring. First lesson is free.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p class="muted">© <span id="year"></span> Top Grades Tutoring • First lesson is free</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Top Grades Tutoring</title>
+  <meta name="description" content="Top Grades Tutoring — Math, English, French. First lesson is free." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="container header">
+    <div class="brand">
+      <div class="mark">TG</div>
+      <div>
+        <h1>Top Grades Tutoring</h1>
+        <p class="tagline">Math • English • French</p>
+      </div>
+    </div>
+
+    <div class="promo">
+      <span class="pill">✅ First lesson is free</span>
+    </div>
+  </header>
+
+  <main class="container grid">
+    <!-- Left: Simple info -->
+    <section class="card">
+      <h2>Get better grades with a simple plan.</h2>
+      <p>
+        Personalized tutoring focused on understanding, confidence, and consistent improvement.
+        Send a request below and we’ll reply to schedule your <strong>free first lesson</strong>.
+      </p>
+
+      <div class="details">
+        <h3>Contact</h3>
+        <p><strong>Your Name:</strong> <span class="muted">[Put your name here]</span></p>
+        <p><strong>Phone:</strong> <span class="muted">[Put your phone here]</span></p>
+        <p><strong>Email:</strong> <span class="muted">[Put your email here]</span></p>
+        <p><strong>Subjects:</strong> Math, English, French</p>
+      </div>
+    </section>
+
+    <!-- Right: Form -->
+    <section class="card">
+      <h2>Request tutoring</h2>
+      <p class="muted">Fill this out and it will be sent to your email.</p>
+
+      <!-- IMPORTANT:
+        1) Create a Formspree form and replace the action URL below.
+        2) Example: action="https://formspree.io/f/abcdwxyz"
+      -->
+      <form
+        class="form"
+        action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID"
+        method="POST"
+      >
+        <!-- Visitor info -->
+        <div class="row">
+          <div>
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Smith" required />
+          </div>
+
+          <div>
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" required />
+          </div>
+        </div>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label for="subjects">Subjects needed</label>
+        <select id="subjects" name="subjects" required>
+          <option value="" disabled selected>Select a subject</option>
+          <option>Math</option>
+          <option>English</option>
+          <option>French</option>
+          <option>Math + English</option>
+          <option>Math + French</option>
+          <option>English + French</option>
+          <option>Other (describe below)</option>
+        </select>
+
+        <label for="message">Inquiry / request</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="Tell us the grade level, topic, goals, and your availability."
+          required
+        ></textarea>
+
+        <!-- Optional: Email subject line -->
+        <input type="hidden" name="_subject" value="New Tutoring Request — Top Grades Tutoring" />
+
+        <button type="submit">Submit request</button>
+
+        <p class="fineprint">
+          By submitting, you agree we can contact you about tutoring. First lesson is free.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p class="muted">© <span id="year"></span> Top Grades Tutoring • First lesson is free</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
